@@ -1,0 +1,29 @@
+Goal: Sort an extremely large text file using java.
+
+How it works:
+
+1: Take the target text file
+
+2: Split it into multiple say ‘n’ small chunks
+
+3: Feed each chunk of these files to each of the ‘n’ asynchronous threads for sorting
+
+4: Merge the sorted files into one (TBI)  
+
+Limitations:
+
+Right now, the code has some minor limitations like -
+
+- Total number of lines in the target file should be a multiple of total number of threads.
+
+- File splitting taking more time than sorting (roughly 3:1)
+
+- Inability to merge back the sorted intermediate files into one big sorted file
+
+Apparently, In my next post probably I will fix all of them, but for now have fun with the following code.
+
+IMPROVEMENTS:
+
+- We can avoid physically splitting the file before sorting (will do it in next post). 
+
+** You can use, modify and do whatever you want to this code as long as you understand what’s going on in the code ;)
