@@ -1,4 +1,4 @@
 JavaFileSorter
 ==============
 
-Multi-Threaded Fat-File Sorter
+multi-Threaded Fat-File Sorter
